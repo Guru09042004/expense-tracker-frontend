@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | Smart Expense Tracker</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+  <div class="auth-card">
+    <h1>💸 Smart Expense Tracker</h1>
+    <p class="muted">Apna paisa, apna hisaab</p>
+
+    <div class="tabs">
+      <button type="button" id="tabLogin" class="tab active">Login</button>
+      <button type="button" id="tabSignup" class="tab">Signup</button>
+    </div>
+
+    <form id="authForm">
+      <input type="text" id="name" placeholder="Aapka naam" class="hidden">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password (kam se kam 6 characters)" minlength="6" required>
+      <button type="submit" id="authBtn">Login</button>
+      <p id="msg" class="auth-msg"></p>
+    </form>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>
